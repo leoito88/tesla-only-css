@@ -18,8 +18,11 @@ img{
     width: 100%;
 }
 
+
+
 nav{
-    background-color: transparent;
+    background-color: #ffffff4b;
+    backdrop-filter: blur(15px);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -28,10 +31,21 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
+
+    /* @keyframes show {
+        from {
+            color: #fff;
+        }
+    
+        to {
+            color: #000;
+        }
+    } */
 }
 
 .nav__logo{
     width: 120px;
+    color: #000;
 }
 
 .nav__links{
@@ -145,6 +159,14 @@ video{
     align-items: center;
     padding-bottom: 175px;
     background-position: center center;
+    /* view-timeline-name: --navi;
+    view-timeline-axis: block;
+
+    animation-timeline: --navi;
+    animation-name: show;
+
+    animation-range: entry 35% cover 50%;
+    animation-fill-mode: both; */
 }
 
 h1{
