@@ -54,6 +54,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 12px;
+    width: 120px;
 }
 
 .nav__right svg{
@@ -80,10 +81,56 @@ nav{
     display: none;
   } */
 
-.hero-1, .hero-2, .hero-3, .hero-4, .hero-5, .hero-6, .hero-7, .hero-8, .hero-9, .hero-10{
+.hero-1, .hero-2, .hero-3, .hero-4, .hero-5, .hero-6, .hero-7, .hero-8, .hero-9, .hero-10, .hero-hero{
     height: 100vh;
     background-size: cover;
     scroll-snap-align: start;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-hero{
+    /* position: relative; */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 115px;
+}
+
+.hero-10{
+    position: relative;
+    background-size: cover;
+    /* padding: 115px; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* padding-bottom: 175px; */
+    background-position: center center;
+    z-index: 2;
+}
+
+.demo-drive{
+    background-color: #ffffff41;
+    border: solid 2px #fff;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 10px 100px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
 }
 
 .hero-1{
@@ -143,7 +190,10 @@ h3{
 
 .bottom{
     display: flex;
+    justify-content: center;
+    text-align: center;
     gap: 20px;
+    width: 100%;
 }
 
 .hero-2{
@@ -282,8 +332,7 @@ h3{
     background: url(../img/Homepage-Model-3-Desktop-LHD-v2.avif);
     background-size: cover;
     position: relative;
-    top: -54px;
-    padding: 144px;
+    /* top: -54px; */
 }
 
 footer{
@@ -331,4 +380,8 @@ footer p{
     flex-direction: row;
     justify-content: center;
     gap: 30px;
+}
+
+.hero-hero .top h1,h3{
+    color: #fff;
 }
